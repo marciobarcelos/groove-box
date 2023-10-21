@@ -8,15 +8,15 @@
     justify-items: end;
 }
 
-.introduction .img-item {
+img {
+    max-width: 100%;
+    display: block;
+}
+.introduction-cover img {
     object-fit: cover;
     height: 100%;
 }
 
-.img-item {
-    max-width: 100%;
-    display: block;
-}
 
 .content {
     display: grid;
@@ -47,7 +47,9 @@
 @media (max-width: 600px) {
     body {
         gap: 30px;
+        margin-top: 20px;
     }
+    
 
     .main-header {
         gap: 30px;
@@ -60,9 +62,6 @@
         text-align: left;
         justify-items: start;
     }
-    .introduction::before {
-        display: none;
-    }
 
     .main-subtitle {
         font-size: 3rem;
@@ -72,5 +71,8 @@
 @media (max-width: 400px) {
     .main-subtitle {
         font-size: 2rem;
+    }
+    p {
+        font: 1rem;
     }
 }
